@@ -6,7 +6,7 @@
 /*   By: abouabra <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 13:26:21 by abouabra          #+#    #+#             */
-/*   Updated: 2022/10/05 16:22:12 by abouabra         ###   ########.fr       */
+/*   Updated: 2022/10/05 16:24:29 by abouabra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ char	*ft_strrchr(const char *str, int c)
 	while (i != 0 && ((unsigned char *)str)[i] != (unsigned char)c)
 		i--;
 	if (((unsigned char *)str)[i] == (unsigned char)c)
-		return ((char *)s[i]);
+		return ((char *)&str[i]);
 	return (0);
 }
