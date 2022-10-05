@@ -6,7 +6,7 @@
 /*   By: abouabra <abouabra@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 13:24:48 by abouabra          #+#    #+#             */
-/*   Updated: 2022/10/02 18:53:02 by abouabra         ###   ########.fr       */
+/*   Updated: 2022/10/05 16:01:41 by abouabra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t	i;
 
+	if (!dst && !src)
+		return (0);
 	i = 0;
 	if (dst > src)
 		while (len--)
